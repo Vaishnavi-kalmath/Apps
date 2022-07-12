@@ -1,7 +1,7 @@
 From python:latest
 RUN mkdir /data
 WORKDIR /data
-ADD . .
+COPY . .
 RUN pip3 install flask
 ENV PORT 5000
 EXPOSE 5000
